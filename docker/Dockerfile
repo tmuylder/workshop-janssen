@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 LABEL description = "Minimal image for the J&J course Docker - example 2."
 MAINTAINER "Alexander Botzki" alexander.botzki@vib.be
