@@ -16,7 +16,6 @@ RUN apt-get update && \
                                                fontconfig \
                                                git \
                                                language-pack-en \
-                                               tzdata \
                                                vim \
                                                unzip \
                                                wget \
