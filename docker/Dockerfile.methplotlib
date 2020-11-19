@@ -38,7 +38,7 @@ USER biodocker
 LABEL software="metplotlib" \ 
       base_image="biocontainers/biocontainers:vdebian-buster-backports_cv1" \ 
       container="metplotlib" \ 
-      about.summary="HTML report using data from nanopolish" \ 
+      about.summary="Plotting tools for nanopore methylation data" \ 
       about.home="https://github.com/wdecoster/methplotlib" \ 
       software.version="0.14.1" \ 
       upstream.version="0.14.1" \ 
