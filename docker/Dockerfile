@@ -8,6 +8,10 @@ SHELL ["/bin/bash", "-c"]
 # Set workdir
 WORKDIR /course
 
+#
+ENV TZ=Europe/Amsterdam
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Install necessary tools
 RUN apt-get update && \
     apt-get install -y --no-install-recommends bzip2 \
@@ -38,5 +42,5 @@ ENV LC_LANG en_US.UTF-8
 
 # copy environment.yml into the image 
 COPY environment.yml /
-RUN conda env create -f /environment.yml && conda clean -a
+RUN conda env create -f /environment.yml
 ENV PATH=/usr/miniconda3/envs/pipeline-tools-1.0.0/bin/:$PATH
