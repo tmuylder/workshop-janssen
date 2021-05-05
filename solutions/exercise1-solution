@@ -1,6 +1,0 @@
-Exercise 1:
-docker pull quay.io/biocontainers/fastqc:0.11.9--0
-docker run --rm --name fastqc_albot quay.io/biocontainers/fastqc:0.11.9--0 fastqc -h
-docker run --rm -it --name fastqc_albot quay.io/biocontainers/fastqc:0.11.9--0 /bin/bash
-
-it is / - there should be the typical Linux folders
